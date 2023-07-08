@@ -353,7 +353,7 @@ suspend fun getTodaysWallpaper(wallType: String): String {
         val calendar = Calendar.getInstance()
         val month = calendar.get(Calendar.MONTH)
         val day = calendar.get(Calendar.DAY_OF_MONTH)
-        val key = String.format("%d_%d", month + 1, day)
+        val key = String.format(null, "%d_%d", month + 1, day)
 
         try {
             val url = URL(Constants.URL_WALLPAPERS)
